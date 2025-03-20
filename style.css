@@ -1,33 +1,36 @@
 /* Header and navigation styles */
 header {
-  background-color: #2c3e50; /* Dark background color */
-  padding: 20px 0; /* Increased padding for a balanced feel */
+  background-color: #3498db; /* Blue background for the header */
+  padding: 20px 0; /* Increased padding for better spacing */
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 20px; /* Slightly increased margin for better spacing */
+  margin: 0 20px; /* Space between each item */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #ecf0f1; /* Light gray color for the font */
+  color: #ecf0f1; /* Light font color */
   font-weight: bold;
   font-size: 18px;
   font-family: 'Roboto', sans-serif; /* Modern font */
-  position: relative;
+  transition: color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
-  color: #3498db; /* Blue color for hover effect */
+  color: #3498db; /* Change color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Adding a smooth underline effect on hover */
+/* Optional: Adding hover effect with a subtle underline */
 nav ul li a::after {
   content: '';
   position: absolute;
@@ -35,7 +38,7 @@ nav ul li a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #3498db; /* Blue underline color */
+  background-color: #ecf0f1; /* Light underline color */
   transition: width 0.3s;
 }
 
@@ -43,7 +46,13 @@ nav ul li a:hover::after {
   width: 100%; /* Full underline width on hover */
 }
 
-/* Optional: Darker background color for header */
-header {
-  background-color: #34495e; /* Slightly darker blue-gray background */
+/* Section styling for the content */
+section {
+  padding: 20px;
+  margin-top: 20px;
 }
+
+section h1 {
+  color: #2c3e50; /* Dark color for section headings */
+}
+
