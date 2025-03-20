@@ -1,7 +1,7 @@
 /* Header and navigation styles */
 header {
-  background-color: #3498db;
-  padding: 10px 0;
+  background-color: #2c3e50; /* Dark background color */
+  padding: 20px 0; /* Increased padding for a balanced feel */
 }
 
 nav ul {
@@ -11,16 +11,39 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px; /* Slightly increased margin for better spacing */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #ecf0f1; /* Light gray color for the font */
   font-weight: bold;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  position: relative;
 }
 
 nav ul li a:hover {
-  color: #ecf0f1;
+  color: #3498db; /* Blue color for hover effect */
+}
+
+/* Adding a smooth underline effect on hover */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3498db; /* Blue underline color */
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* Full underline width on hover */
+}
+
+/* Optional: Darker background color for header */
+header {
+  background-color: #34495e; /* Slightly darker blue-gray background */
 }
